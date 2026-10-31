@@ -1,0 +1,10 @@
+# Build artifacts
+*.o
+moc_*.cpp
+*.moc
+build/
+
+# Editor / OS files
+.DS_Store
+*~
+*.swp
