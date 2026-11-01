@@ -1,8 +1,8 @@
 ![plasma-minimal-osd](https://img.shields.io/badge/plasma--minimal--osd-gray?style=for-the-badge&logo=kde&logoColor=white) 
 ![License](https://img.shields.io/badge/License-GPL--2.0-orange?style=for-the-badge) 
-![Stars](https://img.shields.io/gitea/stars/lumexren/plasma-minimal-osd?gitea_url=https%3A%2F%2Fcodeberg.org&style=for-the-badge&color=DAA520) 
-![Issues](https://img.shields.io/gitea/issues/open/lumexren/plasma-minimal-osd?gitea_url=https%3A%2F%2Fcodeberg.org&style=for-the-badge) 
-![Last Commit](https://img.shields.io/gitea/last-commit/lumexren/plasma-minimal-osd?gitea_url=https%3A%2F%2Fcodeberg.org&style=for-the-badge&color=F7A41D) 
+![Stars](https://img.shields.io/github/stars/lumexren/plasma-minimal-osd?style=for-the-badge&color=DAA520) 
+![Issues](https://img.shields.io/github/issues/lumexren/plasma-minimal-osd?style=for-the-badge) 
+![Last Commit](https://img.shields.io/github/last-commit/lumexren/plasma-minimal-osd?style=for-the-badge&color=F7A41D) 
 <br>
 
 **A clean, minimal, and bottom-aligned On-Screen Display (OSD) replacement for KDE Plasma 6**
@@ -55,7 +55,7 @@ Designed to blend natively into KDE's **Breeze** theme while solving common plac
 Clone the repository and run the installation script:
 
 ```bash
-git clone https://codeberg.org/lumexren/plasma-minimal-osd.git
+git clone https://github.com/lumexren/plasma-minimal-osd.git
 cd plasma-minimal-osd
 chmod +x install.sh
 ./install.sh
