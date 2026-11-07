@@ -3,6 +3,8 @@
 moc_*.cpp
 *.moc
 build/
+*.pkg.tar*
+pkg/
 
 # Editor / OS files
 .DS_Store

@@ -12,7 +12,7 @@ fi
 "$MOC" -I/usr/include/qt6 -I/usr/include/qt6/QtCore plugin.h -o moc_plugin.cpp
 "$MOC" -I/usr/include/qt6 -I/usr/include/qt6/QtCore -I/usr/include/PlasmaQuick osdwindow.h -o moc_osdwindow.cpp
 
-g++ -fPIC -shared -O2 -std=c++20 \
+g++ -fPIC -shared ${CXXFLAGS:--O2} -std=c++20 \
   -I. \
   -I/usr/include/PlasmaQuick \
   -I/usr/include/Plasma \
@@ -21,6 +21,7 @@ g++ -fPIC -shared -O2 -std=c++20 \
   $(pkg-config --cflags Qt6Quick Qt6Qml Qt6Core Qt6Gui Qt6DBus) \
   osdwindow.cpp moc_osdwindow.cpp plugin.cpp moc_plugin.cpp \
   -o ../libplasmashell_osd.so \
+  ${LDFLAGS} \
   $(pkg-config --libs Qt6Quick Qt6Qml Qt6Core Qt6Gui Qt6DBus) \
   -lPlasmaQuick -lKF6WindowSystem -lwayland-client
 
